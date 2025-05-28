@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu de navigation -->
+  <nav class="navbar">
+    <div class="logo ligne">Mon Portfolio</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#accueil" class="ligne">Accueil</a></li>
+      <li><a href="#apropos" class="ligne">À propos</a></li>
+      <li><a href="#projets" class="ligne">Projets</a></li>
+      <li><a href="#contact" class="ligne">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section Accueil -->
+  <header class="hero" id="accueil">
+    <div class="container">
+      <h1 class="ligne">Bonjour, je suis <span class="nom">Têko Roland Afandjo</span></h1>
+      <p class="ligne">Développeur Web passionné par Laravel, HTML, CSS, JS, Flutter, Firebase & Figma</p>
+      <button id="btn-parcours" class="ligne">En voir plus</button>
+    </div>
+  </header>
+
+  <!-- Section À propos -->
+  <section id="apropos">
+    <div class="container-apropos">
+      <div class="texte">
+        <h2 class="ligne">À propos de moi</h2>
+        <p class="ligne">Je suis un développeur web passionné par la création de sites modernes...</p>
+        <ul class="competences ligne">
+          <li>✔️ Laravel & PHP</li>
+          <li>✔️ HTML5 / CSS3</li>
+          <li>✔️ JavaScript</li>
+          <li>✔️ MySQL / Git / API</li>
+          <li>✔️ Figma (maquettes et prototypage)</li>
+          <li>✔️ Firebase (authentification, base de données)</li>
+        </ul>
+      </div>
+      <div class="photo ligne">
+        <img src="tek.jpeg" alt="Photo de moi">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Parcours -->
+  <section id="parcours" class="hidden">
+    <div class="container-parcours">
+      <h2 class="ligne">Mon Parcours</h2>
+      <div class="contenu-parcours">
+        <div class="texte-parcours ligne">
+          <p class="ligne"> Je suis né le <strong>15 septembre 2002</strong>. Après avoir obtenu mon <strong>baccalauréat en 2022</strong>, je me suis lancé dans le domaine du développement web.  
+        <br><br>
+        J'ai suivi une formation intensive en développement web du <strong>mois de décembre 2024 à avril 2025</strong> grâce au programme <strong>D-CLIC de l'OIF</strong> au Togo.  
+        <br><br>
+        Aujourd’hui, je continue d’enrichir mes compétences pour devenir un développeur web complet et passionné.</p>
+      </div>
+        <div class="photo-parcours ligne">
+          <img src="tek.jpeg" alt="Photo de Têko Roland Afandjo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets">
+    <div class="container-projets">
+      <h2 class="ligne">Mes Projets</h2>
+      <div class="grille-projets">
+        <div class="carte-projet ligne">
+          <h3 class="ligne">Projet Laravel</h3>
+          <p class="ligne">Application de gestion scolaire avec Laravel & MySQL.</p>
+          <a href="https://github.com/afandjo/site_ecole" target="_blank">Voir le projet</a>
+        </div>
+        <div class="carte-projet ligne">
+          <h3 class="ligne">Portfolio en HTML/CSS</h3>
+          <p class="ligne">Site personnel responsive en HTML5/CSS.</p>
+          <a href="#" target="_blank">Voir le projet</a>
+        </div>
+        <div class="carte-projet ligne">
+          <h3 class="ligne">Site e-commerce</h3>
+          <p class="ligne">Site avec panier et paiement intégré.</p>
+          <a href="https://github.com/SAEI-CUBE/projet-dclic-oif-cubetogo-2025-aneho-roland.afandjo.final-project" target="_blank">Voir le projet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <div class="container-contact">
+      <h2 class="ligne">Contactez-moi</h2>
+      <p class="ligne">Vous avez un projet ? Laissez-moi un message.</p>
+      <form id="formulaire-contact" class="ligne">
+        <input type="text" id="nom" placeholder="Votre nom" required>
+        <input type="email" id="email" placeholder="Votre email" required>
+        <textarea id="message" placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+        <p id="msg-formulaire" class="message-success" style="display:none;">Message envoyé avec succès !</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <p class="ligne">&copy; 2025 Têko Roland AFANDJO. Tous droits réservés.</p>
+    <div class="reseaux ligne">
+      <a href="mailto:tekorolandafandjo94@gmail.com">📧 tekorolandafandjo94@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/têko-roland-afandjo" target="_blank">🔗 LinkedIn</a> |
+      <a href="https://github.com/afandjo" target="_blank">💻 GitHub</a> |
+      <a href="https://wa.me/22892634907" target="_blank" style="text-decoration: none; color: green; font-weight: bold;">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" style="vertical-align: middle; width: 24px; height: 24px; margin-right: 8px;">
+        WhatsApp : +228 92 63 49 07
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
